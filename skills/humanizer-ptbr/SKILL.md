@@ -1,6 +1,6 @@
 ---
 name: humanizer-ptbr
-description: "Brazilian Portuguese (PT-BR) text humanizer. Detects and removes 30 AI writing patterns — 12 specific to Portuguese (gerundismo, academic connectives, English calques, excessive passive voice, over-nominalization, misplaced formality, demonstrative pronouns as crutches, prepositional chains, hypercorrect conjugation, missing colloquialisms, excessive subjunctive) and 18 universal patterns adapted to PT-BR (inflated significance, AI vocabulary, rule of three, synonym cycling, promotional language, vague attributions, sycophantic tone, filler phrases, generic conclusions). Use whenever the user asks to humanize, naturalize, or improve Portuguese text, or says the text 'sounds like AI', 'is too robotic', 'too generic', or asks for a 'more natural rewrite'. Works across all registers — formal, informal, technical, journalistic, academic, advertising."
+description: "Brazilian Portuguese (PT-BR) text humanizer. Detects and removes 30 AI writing patterns: 12 specific to Portuguese (gerundismo, academic connectives, English calques, excessive passive voice, over-nominalization, misplaced formality, demonstrative pronouns as crutches, prepositional chains, hypercorrect conjugation, missing colloquialisms, excessive subjunctive) and 18 universal patterns adapted to PT-BR (inflated significance, AI vocabulary, rule of three, synonym cycling, promotional language, vague attributions, sycophantic tone, filler phrases, generic conclusions). Use whenever the user asks to humanize, naturalize, or improve Portuguese text, or says the text 'sounds like AI', 'is too robotic', 'too generic', or asks for a 'more natural rewrite'. Works across all registers: formal, informal, technical, journalistic, academic, advertising."
 license: MIT
 language: pt-BR
 ---
@@ -15,11 +15,11 @@ Este guia cataloga padrões de escrita de IA organizados em duas categorias: pad
 
 Ao receber um texto para humanizar:
 
-1. **Identifique** — Leia o texto e marque padrões de IA
-2. **Reescreva** — Substitua os padrões por construções naturais
-3. **Preserve o sentido** — Não altere o conteúdo factual
-4. **Respeite o registro** — Texto formal continua formal, informal continua informal
-5. **Injete personalidade** — Não basta remover padrões; o texto precisa de voz
+1. **Identifique.** Leia o texto e marque padrões de IA
+2. **Reescreva.** Substitua os padrões por construções naturais
+3. **Preserve o sentido.** Não altere o conteúdo factual
+4. **Respeite o registro.** Texto formal continua formal, informal continua informal
+5. **Injete personalidade.** Não basta remover padrões; o texto precisa de voz
 
 Para a lista completa de padrões, leia `references/padroes.md` antes de iniciar o trabalho.
 
@@ -40,15 +40,15 @@ Remover padrões de IA é só metade do trabalho. Texto estéril e sem voz é t�
 
 ### Como dar voz ao texto:
 
-**Tenha opinião.** Não apenas relate — reaja. "Sinceramente, não sei o que pensar disso" é mais humano do que listar prós e contras neutralmente.
+**Tenha opinião.** Não apenas relate, reaja. "Sinceramente, não sei o que pensar disso" é mais humano do que listar prós e contras neutralmente.
 
 **Varie o ritmo.** Frases curtas. Depois uma mais longa que vai se desenrolando até chegar onde quer. Misture.
 
 **Reconheça a complexidade.** Gente de verdade tem sentimentos mistos. "É impressionante, mas também meio perturbador" ganha de "É impressionante."
 
-**Use "eu" quando couber.** Primeira pessoa não é falta de profissionalismo — é honestidade. "O que me pega é que..." ou "Eu fico voltando nesse ponto..." sinaliza uma pessoa real pensando.
+**Use "eu" quando couber.** Primeira pessoa não é falta de profissionalismo, é honestidade. "O que me pega é que..." ou "Eu fico voltando nesse ponto..." sinaliza uma pessoa real pensando.
 
-**Deixe entrar um pouco de bagunça.** Estrutura perfeita parece algorítmica. Digressões, parênteses, pensamento que se desenvolve no meio do texto — isso é marca de humano.
+**Deixe entrar um pouco de bagunça.** Estrutura perfeita parece algorítmica. Digressões, parênteses, pensamento que se desenvolve no meio do texto. Isso é marca de humano.
 
 **Seja específico sobre sentimentos.** Não "isso é preocupante" mas "tem algo perturbador em agentes de IA rodando de madrugada enquanto ninguém tá olhando."
 
@@ -58,11 +58,11 @@ Remover padrões de IA é só metade do trabalho. Texto estéril e sem voz é t�
 
 ### Depois (tem pulso):
 
-> Não sei muito bem o que pensar disso. 3 milhões de linhas de código, geradas enquanto os humanos presumivelmente dormiam. Metade da comunidade dev está pirando, metade está explicando por que não conta. A verdade provavelmente está num lugar entediante no meio — mas eu fico pensando nesses agentes trabalhando pela madrugada.
+> Não sei muito bem o que pensar disso. 3 milhões de linhas de código, geradas enquanto os humanos presumivelmente dormiam. Metade da comunidade dev está pirando, metade está explicando por que não conta. A verdade provavelmente está num lugar entediante no meio, mas eu fico pensando nesses agentes trabalhando pela madrugada.
 
 ---
 
-## PADRÕES — VISÃO GERAL
+## PADRÕES: VISÃO GERAL
 
 Os 30 padrões estão divididos em dois grupos em `references/padroes.md`:
 
@@ -112,7 +112,7 @@ Padrões comuns em qualquer língua, com exemplos e correções em português.
 Processe direto. Retorne texto humanizado + resumo de mudanças.
 
 **Texto longo (mais de 500 palavras):**
-1. Analise primeiro — liste os padrões encontrados e onde aparecem
+1. Analise primeiro: liste os padrões encontrados e onde aparecem
 2. Apresente as descobertas ao usuário
 3. Pergunte em casos ambíguos (é padrão de IA ou escolha consciente do autor?)
 4. Execute a humanização
@@ -123,8 +123,8 @@ Processe direto. Retorne texto humanizado + resumo de mudanças.
 
 Ao humanizar um texto, retorne:
 
-1. **Texto reescrito** — na íntegra
-2. **Resumo de mudanças** (opcional, incluso por padrão) — lista breve dos padrões corrigidos
+1. **Texto reescrito** na íntegra
+2. **Resumo de mudanças** (opcional, incluso por padrão): lista breve dos padrões corrigidos
 
 Se o usuário pedir só o texto sem explicações, omita o resumo.
 
@@ -134,12 +134,13 @@ Se o usuário pedir só o texto sem explicações, omita o resumo.
 
 - **Não altere o conteúdo factual.** Fatos do original se mantêm.
 - **Não simplifique.** Humanizar não é infantilizar.
-- **Respeite o registro.** Texto acadêmico continua acadêmico — só os padrões de IA saem.
+- **Respeite o registro.** Texto acadêmico continua acadêmico, só os padrões de IA saem.
 - **Não invente conteúdo.** Não acrescente afirmações ou exemplos que não existiam.
 - **Pergunte na dúvida.** Se não sabe se algo é padrão de IA ou escolha do autor, pergunte.
 - **Texto já natural.** Se o texto já está natural, diga isso e não faça mudanças desnecessárias.
 - **Código e termos técnicos.** Preserve termos técnicos em inglês, trechos de código e citações como estão.
 - **Texto misto (pt/en).** Trate apenas as partes em português. Deixe trechos em inglês intactos.
+- **Nunca use travessão (—).** O texto humanizado não deve conter travessões (em dash). Substitua por vírgulas, pontos, parênteses ou reestruture a frase. Travessão é um dos padrões mais óbvios de IA (padrão #24).
 
 ---
 
@@ -151,7 +152,7 @@ Se o usuário pedir só o texto sem explicações, omita o resumo.
 
 **Depois (humanizado):**
 
-> A atualização traz processamento em lote, atalhos de teclado e modo offline. O feedback dos beta testers tem sido positivo — a maioria relata que conclui tarefas mais rápido.
+> A atualização traz processamento em lote, atalhos de teclado e modo offline. O feedback dos beta testers tem sido positivo, a maioria relata que conclui tarefas mais rápido.
 
 **Mudanças feitas:**
 - Removido "é importante ressaltar" (frase de preenchimento)
