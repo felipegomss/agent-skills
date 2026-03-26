@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "skills": {
+    "humanizer-ptbr": {
+      "source": "felipegomss/agent-skills",
+      "sourceType": "github",
+      "computedHash": "1aa95e0d627c6551ed987d2bc3c66f45e65b9c7f2d95f5b7fdbdfa9b5f6dc759"
+    },
+    "react-no-use-effect": {
+      "source": "felipegomss/agent-skills",
+      "sourceType": "github"
+    }
+  }
+}
